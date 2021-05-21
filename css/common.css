@@ -3,13 +3,13 @@
   text-decoration: none; }
 
 .uk-label {
-  background: #1b524b; }
+  background: #f8542e; }
 
 .uk-link, a {
-  color: #1b524b; }
+  color: #f8542e; }
 
 a.header-anchor {
-  color: #1b524b; }
+  color: #f8542e; }
 
 pre {
   font: inherit;
@@ -17,7 +17,7 @@ pre {
   padding: 0; }
 
 .top-menu {
-  background: #1b524b; }
+  background: #f8542e; }
   .top-menu .uk-logo:focus, .top-menu .uk-logo {
     color: white; }
     .top-menu .uk-logo:focus:hover, .top-menu .uk-logo:hover {
@@ -57,16 +57,16 @@ pre {
   height: 4px; }
 
 ::-webkit-scrollbar-track {
-  -webkit-box-shadow: rgba(29, 84, 77, 0.3);
-  background: rgba(29, 84, 77, 0.1); }
+  -webkit-box-shadow: rgba(248, 86, 48, 0.3);
+  background: rgba(248, 86, 48, 0.1); }
 
 ::-webkit-scrollbar-thumb {
   border-radius: 3px;
-  background: rgba(29, 84, 77, 0.3);
-  -webkit-box-shadow: rgba(29, 84, 77, 0.5); }
+  background: rgba(248, 86, 48, 0.3);
+  -webkit-box-shadow: rgba(248, 86, 48, 0.5); }
 
 ::-webkit-scrollbar-thumb:window-inactive {
-  background: rgba(29, 84, 77, 0.3); }
+  background: rgba(248, 86, 48, 0.3); }
 
 footer {
   padding: 10px 0;

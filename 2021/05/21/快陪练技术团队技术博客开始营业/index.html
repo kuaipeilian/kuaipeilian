@@ -4,14 +4,17 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="author" content="快陪练技术部">
-<meta name="description" content>
+<meta name="description" content="快陪练
+
+快陪练是一个在线音乐教育陪练APP，为4-16岁琴童提供一对一真人在线乐器陪练服务，开设了有钢琴、小提琴、古筝、架子鼓、吉他、琵琶、竹笛、萨克斯、手风琴、二胡、长笛、马林巴等全品类音乐线上陪练课程，深度解决琴童在乐器练习过程中遇到的练琴无人指导、家长没时间陪伴或不专业、线下陪练成本高昂等问题，帮助琴童和家长提供多元化乐器学习解决方案。 
+
+快陪练通过专业陪练老师一对一在线指导，帮助琴童进">
 <meta name="keywords" content>
-<title></title>
+<title>post</title>
 <link rel="icon" href type="image/ico">
 
 <link rel="stylesheet" href="/css/uikit.min.css">
 <link rel="stylesheet" href="/css/common.css">
-<link rel="stylesheet" href="/css/index.css">
 <script src="/js/uikit.min.js"></script>
 <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.js"></script>
 
@@ -117,47 +120,75 @@
 </nav>
 </div>
 
-<div class="slogan">
-    <h2>快陪练技术部</h2>
-    <p>快陪练技术团队技术分享</p>
-    <div uk-grid class="uk-flex-center">
-        
-        <a href="https://www.kuaipeilian.com/" class="uk-button uk-button-default uk-margin-medium-right@s uk-box-shadow-hover-large start-btn">快陪练官网</a>
-        
-        <a href="https://github.com/kuaipeilian" class="uk-button uk-button-default uk-margin-medium-right@s uk-box-shadow-hover-large start-btn">GITHUB</a>
-        
-    </div>
-</div>
+<link rel="stylesheet" href="/css/post.css">
+<div class="blog-wrapper">
+    <div class="uk-container content">
+        <h2>快陪练技术团队技术博客开始营业</h2>
+        <div class="uk-grid-small uk-grid" uk-grid>
+            
+            <div class="uk-first-column">
+                
+                <span class="uk-label">其他</span>
+                
 
-
-<div>
-    <div class="uk-container uk-padding-large">
-        <div class="uk-grid-small uk-child-width-1-1@s uk-child-width-1-2@m" uk-grid>
+            </div>
             
-                <div>
-                    <h3>我们是谁</h3>
-                    <p>快陪练技术团队</p>
-                </div>
             
-                <div>
-                    <h3>建站原因</h3>
-                    <p>分享团队的技术积累，与大家共同进步</p>
-                </div>
+            <div>
+                <a target="_blank" href="https://github.com/yushuailiu">yushuailiu</a>
+            </div>
             
-                <div>
-                    <h3>问题反馈</h3>
-                    <p>发送邮件 abao@weilaicheng.com</p>
-                </div>
-            
-                <div>
-                    <h3>加入我们</h3>
-                    <p>各技术岗位都在招聘中，简历发送邮件 abao@weilaicheng.com</p>
-                </div>
-            
+            <div>
+                <span class="button-span">发布于 2021-05-21 20:28:00</span>
+            </div>
         </div>
+        <article>
+            <h2><span id="快陪练">快陪练</span></h2><p>快陪练是一个在线音乐教育陪练APP，为4-16岁琴童提供一对一真人在线乐器陪练服务，开设了有钢琴、小提琴、古筝、架子鼓、吉他、琵琶、竹笛、萨克斯、手风琴、二胡、长笛、马林巴等全品类音乐线上陪练课程，深度解决琴童在乐器练习过程中遇到的练琴无人指导、家长没时间陪伴或不专业、线下陪练成本高昂等问题，帮助琴童和家长提供多元化乐器学习解决方案。</p>
+<p>快陪练通过专业陪练老师一对一在线指导，帮助琴童进行节奏、错音、指法纠正等问题，与琴童形成互动，引导孩子的练琴兴趣，用科学指导帮助孩子有效练琴、快乐练琴。</p>
+<p>快陪练主张“师资水平即等于陪练效果”，重点打造师资质量和行业标准，教师筛选比例为69:1。</p>
+<h2><span id="快陪练技术团队介绍">快陪练技术团队介绍</span></h2><p>快陪练技术团队是一个小而美的团队，技术团队包含前端、后端（JAVA、GOLANG）、安卓、IOS、算法、C++、测试、运维、BI等。<br>技术团队每周固定组织技术分享。<br>我们鼓励大家尝试新技术、新方案。<br>我们努力成长，期望用技术的手段帮助更多的孩子有效练琴、快乐练琴。<br>期待更多优秀的人才加入我们！</p>
+
+        </article>
+        <ul class="uk-pagination">
+            
+            
+            
+        </ul>
     </div>
 </div>
 
+<link rel="stylesheet" href="//cdn.bootcss.com/highlight.js/9.6.0/styles/github.min.css">
+<script src="//cdn.bootcss.com/highlight.js/9.6.0/highlight.min.js"></script>
+<script>
+  var trim_indent = true;
+  var line_number = false;
+  // enable highlight
+  $('pre code').each(function (i, block) {
+    var texts = $(this).text().split('\n');
+    // trim indent
+    if (trim_indent) {
+      var tab = texts[0].match(/^\s{0,}/);
+      if (tab) {
+        var arr = [];
+        texts.forEach(function (temp) {
+          arr.push(temp.replace(tab, ''));
+        });
+        $(this).text(arr.join('\n'));
+      }
+    }
+    // add line number
+    if (line_number) {
+      var lines = texts.length - 1;
+      var $numbering = $('<ul/>').addClass('pre-numbering');
+      $(this).addClass('has-numbering').parent().append($numbering);
+      for (i = 1; i <= lines; i++) {
+        $numbering.append($('<li/>').text(i));
+      }
+    }
+    // hightlight
+    hljs.highlightBlock(block);
+  });
+</script>
 
 <footer>
     <p>Copyright © 2021 快陪练技术部</p>

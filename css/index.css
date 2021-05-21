@@ -1,5 +1,5 @@
 .slogan {
-  background: #1b524b;
+  background: #f8542e;
   padding-bottom: 20px; }
   .slogan * {
     color: white;
@@ -14,6 +14,6 @@
     margin-right: 20px;
     min-width: 8rem; }
     .slogan .uk-button:hover {
-      color: #1b524b;
+      color: #f8542e;
       background: white;
       border-color: white; }
