@@ -1,0 +1,23 @@
+<div class="slogan">
+    <h2><%= config.title %></h2>
+    <p><%= config.subtitle %></p>
+    <div uk-grid class="uk-flex-center" uk-grid>
+        <% site.data.buttons.forEach(function (item) { %>
+        <a href="<%= item.url %>" class="uk-button uk-button-default uk-margin-medium-right@s uk-box-shadow-hover-large start-btn"><%= item.text %></a>
+        <% });%>
+    </div>
+</div>
+
+
+<div>
+    <div class="uk-container uk-padding-large">
+        <div class="uk-grid-small uk-child-width-1-1@s uk-child-width-1-2@m" uk-grid>
+            <% site.data.features.forEach(function (item) { %>
+                <div>
+                    <h3><%= item.title %></h3>
+                    <p><%= item.text %></p>
+                </div>
+            <%})%>
+        </div>
+    </div>
+</div>

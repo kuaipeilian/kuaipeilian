@@ -1,0 +1,25 @@
+[
+  {
+    "text": "首页",
+    "url": "/"
+  },
+  {
+    "text": "博客",
+    "url": "/post"
+  },
+  {
+    "text": "关于我们",
+    "children": [
+      {
+        "text": "快陪练官网",
+        "url": "https://www.kuaipeilian.com/",
+        "blank": true
+      },
+      {
+        "text": "github",
+        "url": "https://github.com/kuaipeilian/kuaipeilian",
+        "blank": true
+      }
+    ]
+  }
+]

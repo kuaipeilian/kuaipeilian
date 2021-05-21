@@ -1,0 +1,43 @@
+<div class="document-content">
+    <div uk-grid>
+        <div class="uk-width-auto@m uk-visible@m">
+            <ul class="category-list-wrapper" id="category-list-wrapper">
+                <% let info = documentCategory(page) %>
+                <%- info.category %>
+            </ul>
+            <div id="category-placeholder">
+            </div>
+        </div>
+        <div class="uk-width-expand@m text-content-wrapper uk-width-1-1">
+            <div class="text-content">
+                <%- page.content %>
+                <div>
+                    <% if (config.polardoc.edit_url) {%>
+                        <a target="_blank" href="<%= config.polardoc.edit_url %>/source/<%= page.source %>" class="edit">编辑本页</a>
+                    <% } %>
+                    <ul class="uk-pagination">
+                        <% if (info.prev) { %>
+                            <li><a href="<%= info.prev.url %>"><span class="uk-margin-small-right" uk-pagination-previous></span> <%= info.prev.name %></a></li>
+                        <%}%>
+                        <% if (info.next) { %>
+                            <li class="uk-margin-auto-left"><a href="<%= info.next.url %>"><%= info.next.name %> <span class="uk-margin-small-left" uk-pagination-next></span></a></li>
+                        <%}%>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+  $(document).ready(function () {
+    // 侧边栏样式
+    let width = $('#category-list-wrapper')[0].clientWidth;
+    $("#category-placeholder").width(width);
+    $('#category-list-wrapper').css("position", "fixed")
+    // 翻页
+    $('#category-list-wrapper .active').parentsUntil(':has(a)').css('background', 'red');
+  });
+</script>
+
+<%- partial("_partial/highlight") %>

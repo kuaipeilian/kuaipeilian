@@ -1,0 +1,70 @@
+<div id="top-menu-wrapper" uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+    <nav class="uk-navbar-container uk-navbar-transparent top-menu">
+    <div class="uk-container">
+        <div uk-navbar="" class="lfuture-navbar uk-navbar">
+            <div class="uk-navbar-left">
+                <a class="uk-navbar-item uk-logo" href="/"><%- config.name %></a>
+            </div>
+            <div class="uk-navbar-center">
+                <ul class="uk-navbar-nav uk-visible@m">
+                    <% site.data.menu.forEach(function (item) { %>
+                        <% if (item.url) {%>
+                            <li class="uk-active"><a href="<%= item.url %>" <%= item.blank ? 'target="_blank"' : '' %>><%= item.text %></a>
+                        <% } else {%>
+                            <li class="uk-active"><a><%= item.text %></a>
+                        <%}%>
+
+                        <%if (item.children && item.children.length) { %>
+                            <div class="uk-navbar-dropdown">
+                                <ul class="uk-nav uk-navbar-dropdown-nav">
+                            <% item.children.forEach(function (item) { %>
+                                <% if (item.url) {%>
+                                    <li class="uk-active"><a href="<%= item.url %>" <%= item.blank ? 'target="_blank"' : '' %>><%= item.text %></a></li>
+                                <% } else {%>
+                                    <li class="uk-active"><a><%= item.text %></a></li>
+                                <%}%>
+                            <%});%>
+                                </ul>
+                            </div>
+                        <%}%>
+                    </li>
+                    <% });%>
+                </ul>
+            </div>
+            <div class="uk-navbar-right">
+                <a class="uk-navbar-toggle uk-hidden@m" uk-toggle="target:#offcanvas-push" uk-navbar-toggle-icon uk-toggle></a>
+                <div id="offcanvas-push" uk-offcanvas="mode: push;overlay: true">
+                    <div class="uk-offcanvas-bar uk-flex uk-flex-column uk-text-center">
+
+                        <button class="uk-offcanvas-close uk-close-large" type="button" uk-close></button>
+
+                        <ul class="category-nav uk-nav uk-nav-primary uk-nav-center uk-nav-parent-icon" uk-nav>
+                            <% site.data.menu.forEach(function (item) { %>
+                            <% if (item.url) {%>
+                            <li class="uk-active"><a href="<%= item.url %>" <%= item.blank ? 'target="_blank"' : '' %>><%= item.text %></a>
+                                <% } else {%>
+                            <li class="uk-active"><a><%= item.text %></a>
+                                <%}%>
+
+                                <%if (item.children && item.children.length) { %>
+                                    <ul class="uk-nav uk-navbar-dropdown-nav">
+                                        <% item.children.forEach(function (item) { %>
+                                        <% if (item.url) {%>
+                                        <li class="uk-active"><a href="<%= item.url %>" <%= item.blank ? 'target="_blank"' : '' %>><%= item.text %></a></li>
+                                        <% } else {%>
+                                        <li class="uk-active"><a><%= item.text %></a></li>
+                                        <%}%>
+                                        <%});%>
+                                    </ul>
+                                <%}%>
+                            </li>
+                            <% });%>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</nav>
+</div>
