@@ -1,0 +1,229 @@
+<html>
+<head><meta name="generator" content="Hexo 3.9.0">
+    
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="author" content="快陪练技术部">
+<meta name="description" content="目录结构
+
+polardoc 是一个基于 hexo 的主题，在整体目录结构上和 hexo 站点一致，但是由于 polardoc 不只是一个简单的 blog 站点
+所以其有自己特定的目录结构，一个基本的 polardoc 目录如下： 
+
+├── scaffolds ├── source ├── _data ├── document ├── api.json ├── _draft ├── _posts">
+<meta name="keywords" content>
+<title>document</title>
+<link rel="icon" href type="image/ico">
+
+<link rel="stylesheet" href="/css/uikit.min.css">
+<link rel="stylesheet" href="/css/common.css">
+<link rel="stylesheet" href="/css/document.css">
+<script src="/js/uikit.min.js"></script>
+<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.js"></script>
+
+
+</head>
+<body>
+<div id="top-menu-wrapper" uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+    <nav class="uk-navbar-container uk-navbar-transparent top-menu">
+    <div class="uk-container">
+        <div uk-navbar class="lfuture-navbar uk-navbar">
+            <div class="uk-navbar-left">
+                <a class="uk-navbar-item uk-logo" href="/">快陪练技术部</a>
+            </div>
+            <div class="uk-navbar-center">
+                <ul class="uk-navbar-nav uk-visible@m">
+                    
+                        
+                            <li class="uk-active"><a href="/">首页</a>
+                        
+
+                        
+                    </li>
+                    
+                        
+                            <li class="uk-active"><a href="/document/快速开始.html">文档</a>
+                        
+
+                        
+                    </li>
+                    
+                        
+                            <li class="uk-active"><a href="/post">博客</a>
+                        
+
+                        
+                    </li>
+                    
+                        
+                            <li class="uk-active"><a>源码</a>
+                        
+
+                        
+                            <div class="uk-navbar-dropdown">
+                                <ul class="uk-nav uk-navbar-dropdown-nav">
+                            
+                                
+                                    <li class="uk-active"><a href="https://github.com/polarcloud/polardoc-demo" target="&quot;_blank&quot;">github</a></li>
+                                
+                            
+                                
+                                    <li class="uk-active"><a href="https://gitee.com/polarcloud/polardoc-demo" target="&quot;_blank&quot;">gitee</a></li>
+                                
+                            
+                                </ul>
+                            </div>
+                        
+                    </li>
+                    
+                </ul>
+            </div>
+            <div class="uk-navbar-right">
+                <a class="uk-navbar-toggle uk-hidden@m" uk-toggle="target:#offcanvas-push" uk-navbar-toggle-icon></a>
+                <div id="offcanvas-push" uk-offcanvas="mode: push;overlay: true">
+                    <div class="uk-offcanvas-bar uk-flex uk-flex-column uk-text-center">
+
+                        <button class="uk-offcanvas-close uk-close-large" type="button" uk-close></button>
+
+                        <ul class="category-nav uk-nav uk-nav-primary uk-nav-center uk-nav-parent-icon" uk-nav>
+                            
+                            
+                            <li class="uk-active"><a href="/">首页</a>
+                                
+
+                                
+                            </li>
+                            
+                            
+                            <li class="uk-active"><a href="/document/快速开始.html">文档</a>
+                                
+
+                                
+                            </li>
+                            
+                            
+                            <li class="uk-active"><a href="/post">博客</a>
+                                
+
+                                
+                            </li>
+                            
+                            
+                            <li class="uk-active"><a>源码</a>
+                                
+
+                                
+                                    <ul class="uk-nav uk-navbar-dropdown-nav">
+                                        
+                                        
+                                        <li class="uk-active"><a href="https://github.com/polarcloud/polardoc-demo" target="&quot;_blank&quot;">github</a></li>
+                                        
+                                        
+                                        
+                                        <li class="uk-active"><a href="https://gitee.com/polarcloud/polardoc-demo" target="&quot;_blank&quot;">gitee</a></li>
+                                        
+                                        
+                                    </ul>
+                                
+                            </li>
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</nav>
+</div>
+
+<div class="document-content">
+    <div uk-grid>
+        <div class="uk-width-auto@m uk-visible@m">
+            <ul class="category-list-wrapper" id="category-list-wrapper">
+                
+                <li> <a href="/document/快速开始.html">快速开始</a></li><li> <a>教程</a><ul><li> <a href="/document/教程一.html">教程一</a></li><li> <a href="/document/demo.html">demo</a></li></ul></li>
+            </ul>
+            <div id="category-placeholder">
+            </div>
+        </div>
+        <div class="uk-width-expand@m text-content-wrapper uk-width-1-1">
+            <div class="text-content">
+                <h2><span id="目录结构">目录结构</span></h2><p>polardoc 是一个基于 hexo 的主题，在整体目录结构上和 hexo 站点一致，但是由于 polardoc 不只是一个简单的 blog 站点<br>所以其有自己特定的目录结构，一个基本的 polardoc 目录如下：</p>
+<pre><code>├── scaffolds
+├── source
+    ├── _data
+        ├── document
+            ├── api.json
+    ├── _draft
+    ├── _posts
+    ├── api
+        ├── 快速开始.md
+├── themes
+    ├── polardoc
+</code></pre>
+                <div>
+                    
+                        <a target="_blank" href="https://github.com/polarcloud/polardoc-demo/blob/master/source/document/structure.md" class="edit">编辑本页</a>
+                    
+                    <ul class="uk-pagination">
+                        
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+  $(document).ready(function () {
+    // 侧边栏样式
+    let width = $('#category-list-wrapper')[0].clientWidth;
+    $("#category-placeholder").width(width);
+    $('#category-list-wrapper').css("position", "fixed")
+    // 翻页
+    $('#category-list-wrapper .active').parentsUntil(':has(a)').css('background', 'red');
+  });
+</script>
+
+<link rel="stylesheet" href="//cdn.bootcss.com/highlight.js/9.6.0/styles/github.min.css">
+<script src="//cdn.bootcss.com/highlight.js/9.6.0/highlight.min.js"></script>
+<script>
+  var trim_indent = true;
+  var line_number = false;
+  // enable highlight
+  $('pre code').each(function (i, block) {
+    var texts = $(this).text().split('\n');
+    // trim indent
+    if (trim_indent) {
+      var tab = texts[0].match(/^\s{0,}/);
+      if (tab) {
+        var arr = [];
+        texts.forEach(function (temp) {
+          arr.push(temp.replace(tab, ''));
+        });
+        $(this).text(arr.join('\n'));
+      }
+    }
+    // add line number
+    if (line_number) {
+      var lines = texts.length - 1;
+      var $numbering = $('<ul/>').addClass('pre-numbering');
+      $(this).addClass('has-numbering').parent().append($numbering);
+      for (i = 1; i <= lines; i++) {
+        $numbering.append($('<li/>').text(i));
+      }
+    }
+    // hightlight
+    hljs.highlightBlock(block);
+  });
+</script>
+
+
+<footer>
+    <p>Copyright © 2021 快陪练技术部</p>
+    <p><a href="#">ICP：Your ICP </a></p>
+    <p>website version 0.0.1</p>
+</footer>
+</body>
+</html>

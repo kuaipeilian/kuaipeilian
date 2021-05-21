@@ -1,0 +1,7 @@
+.blog-wrapper {
+  padding: 20px; }
+  .blog-wrapper .content {
+    max-width: 840px;
+    margin: auto; }
+  .blog-wrapper article {
+    margin: 20px 0 40px; }

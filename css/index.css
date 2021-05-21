@@ -1,0 +1,19 @@
+.slogan {
+  background: #1b524b;
+  padding-bottom: 20px; }
+  .slogan * {
+    color: white;
+    text-align: center; }
+  .slogan h2 {
+    font-size: 50px;
+    line-height: 70px; }
+  .slogan p {
+    font-size: 30px;
+    line-height: 40px; }
+  .slogan .uk-button {
+    margin-right: 20px;
+    min-width: 8rem; }
+    .slogan .uk-button:hover {
+      color: #1b524b;
+      background: white;
+      border-color: white; }
